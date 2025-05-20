@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="510.0" prefWidth="600.0" styleClass="Dashboard_container" stylesheets="@../../Styles/Dashboard.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smarthome3.controllers.Homeowner.HomeownerController">
+
+    <!-- User Info & Header -->
+    <Text  layoutX="24.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi, Jane" textAlignment="CENTER">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Text>
+    <Label  layoutX="183.0" layoutY="33.0" opacity="0.63" text="12:19 PM | Monday, 24th of October, 2024" />
+    <Text layoutX="522.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Smart Home" wrappingWidth="101.42633056640625">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+    </Text>
+
+    <!-- Temperature Overview Cards -->
+    <VBox layoutX="347.0" layoutY="195.0" prefHeight="91.0" prefWidth="277.0" styleClass="card">
+        <Text fill="#745230" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Temperature" wrappingWidth="192.9873046875">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text  opacity="0.55" strokeType="OUTSIDE" strokeWidth="0.0" text="22°C">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Text>
+    </VBox>
+
+    <VBox layoutX="347.0" layoutY="77.0" prefHeight="100.0" prefWidth="277.0" styleClass="card">
+        <Text fill="#745230" strokeType="OUTSIDE" strokeWidth="0.0" text="Lowest Temperature">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text  opacity="0.55" strokeType="OUTSIDE" strokeWidth="0.0" text="18°C">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Text>
+    </VBox>
+
+    <VBox layoutX="24.0" layoutY="77.0" prefHeight="100.0" prefWidth="259.0" styleClass="card">
+        <Text fill="#745230" strokeType="OUTSIDE" strokeWidth="0.0" text="Highest Temperature">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text opacity="0.55" strokeType="OUTSIDE" strokeWidth="0.0" text="30°C">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Text>
+    </VBox>
+
+    <!-- Temperature Trends Chart -->
+    <VBox layoutX="24.0" layoutY="295.0" prefHeight="244.0" prefWidth="601.0" styleClass="card">
+        <Text fill="#745230" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperature Trends" wrappingWidth="169.0703125">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Text>
+        <LineChart fx:id="temperatureChart" prefHeight="204.0" prefWidth="501.0" title="Temperature Over Time">
+            <xAxis>
+                <CategoryAxis fx:id="yAxis1" label="Time (Hours)" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Temperature (°C)" upperBound="50" fx:id="xAxis1" />
+            </yAxis>
+        </LineChart>
+    </VBox>
+
+    <!-- Temperature Control -->
+    <VBox layoutX="24.0" layoutY="195.0" prefHeight="91.0" prefWidth="259.0" styleClass="card">
+        <Text fill="#745230" strokeType="OUTSIDE" strokeWidth="0.0" text="Adjust Temperature">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+      <Slider />
+        <Label  text="22°C" />
+    </VBox>
+</AnchorPane>

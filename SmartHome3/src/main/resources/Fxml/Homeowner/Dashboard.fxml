@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="671.0" prefWidth="833.0" styleClass="Dashboard_container" stylesheets="@../../Styles/Dashboard.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smarthome3.controllers.Homeowner.DashboardController">
+   <VBox layoutX="1.0" layoutY="12.0" prefHeight="54.0" prefWidth="90.0" AnchorPane.bottomAnchor="684.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="831.3333333333334" AnchorPane.topAnchor="12.0" />
+   <VBox layoutX="5.0" layoutY="16.0" prefHeight="0.0" prefWidth="708.0" />
+   <VBox layoutX="137.0" layoutY="18.0" prefHeight="48.0" prefWidth="452.0" AnchorPane.bottomAnchor="684.0" AnchorPane.topAnchor="18.0" />
+   <VBox layoutX="618.0" layoutY="14.0" prefHeight="6.0" prefWidth="51.0" AnchorPane.bottomAnchor="682.0" AnchorPane.topAnchor="14.0" />
+   <Label fx:id="login_date" layoutX="159.0" layoutY="33.0" opacity="0.63" prefHeight="17.0" prefWidth="312.0" text="12:19 PM | Monday, 24th of October, 2024" />
+   <VBox layoutX="62.0" layoutY="123.0" prefHeight="150" prefWidth="240" style="-fx-background-color: #ffffffcc; -fx-background-radius: 16px; -fx-padding: 20; -fx-spacing: 8;                  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0.2, 0, 2);">
+      <children>
+         <Text style="-fx-font-size: 26px; -fx-fill: #4a3220; -fx-font-weight: bold;" text="Light" />
+         <Text style="-fx-opacity: 0.65; -fx-font-size: 14px;" text="Lighting Automation: Enabled" />
+      </children>
+   </VBox>
+   <VBox layoutX="338.0" layoutY="123.0" prefHeight="150" prefWidth="240" style="-fx-background-color: #ffffffcc; -fx-background-radius: 16px; -fx-padding: 20; -fx-spacing: 8;                  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0.2, 0, 2);">
+      <children>
+         <Text style="-fx-font-size: 26px; -fx-fill: #4a3220; -fx-font-weight: bold;" text="Temperature" />
+         <Text style="-fx-opacity: 0.6; -fx-font-size: 14px;" text="9°C | Auto Room Temperature" />
+         <Slider max="30" min="10" value="22.0" />
+      </children>
+   </VBox>
+   <VBox layoutX="600.0" layoutY="120.0" prefHeight="350" prefWidth="150" style="-fx-background-color: #fff8eb; -fx-background-radius: 16px; -fx-padding: 20; -fx-spacing: 10;                  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 8, 0.3, 0, 2);">
+      <children>
+         <Text style="-fx-font-size: 20px; -fx-fill: #a86c3f; -fx-font-weight: bold;" text="Quick Panel" />
+         <Text style="-fx-font-size: 16px; -fx-fill: #7b5634;" text="Light" />
+         <Text style="-fx-font-size: 16px; -fx-fill: #7b5634;" text="Motion" />
+         <Text style="-fx-font-size: 16px; -fx-fill: #7b5634;" text="Humidity" />
+         <Text style="-fx-font-size: 16px; -fx-fill: #7b5634;" text="Temperature" />
+      </children>
+   </VBox>
+   <VBox layoutX="62.0" layoutY="320.0" prefHeight="150" prefWidth="240" style="-fx-background-color: #ffffffcc; -fx-background-radius: 16px; -fx-padding: 20; -fx-spacing: 8;                  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0.2, 0, 2);">
+      <children>
+         <Text style="-fx-font-size: 26px; -fx-fill: #4a3220; -fx-font-weight: bold;" text="Motion" />
+         <Text style="-fx-opacity: 0.65; -fx-font-size: 14px;" text="4 Connected Devices" />
+      </children>
+   </VBox>
+   <VBox layoutX="338.0" layoutY="320.0" prefHeight="150" prefWidth="240" style="-fx-background-color: #ffffffcc; -fx-background-radius: 16px; -fx-padding: 20; -fx-spacing: 8;                  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0.2, 0, 2);">
+      <children>
+         <Text style="-fx-font-size: 26px; -fx-fill: #4a3220; -fx-font-weight: bold;" text="Humidity" />
+         <Text style="-fx-opacity: 0.65; -fx-font-size: 14px;" text="Humidity: 45%" />
+      </children>
+   </VBox>
+   <Text layoutX="62.0" layoutY="50.0" style="-fx-font-size: 22px; -fx-fill: #333; -fx-font-weight: bold;" text="Hi, Jane" />
+   <Text layoutX="656.0" layoutY="47.0" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-fill: #a66c32;" text="Smart Home" />
+</AnchorPane>
